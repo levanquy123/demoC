@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main() 
+{  
+    int Chon;
+    printf("================ MENU ================");
+    printf("\n1. Logic building with C");
+    printf("\n2. Data structure and algorithm");
+    printf("\n3. Object oriented programming using C#");
+    printf("\n4. HTML - CSS - Javascript");
+    printf("\n5. Database management system");
+    printf("\n6. Network programming fundamentals");
+    printf("\n========================================");
+    printf("\nPlease select the option: ");
+    scanf("%d", &Chon);
+    switch (Chon)
+    {
+        case 1: 
+            printf("\nLogic building with C");
+            break;
+        case 2: 
+            printf("\nData structure and algorithm");
+            break;
+        case 3: 
+            printf("\nObject oriented programming using C#");
+            break;
+        case 4: 
+            printf("\nDatabase management system");
+            break;
+        case 5: 
+            printf("\nLogic building with C");
+            break;
+        case 6: 
+            printf("\nNetwork programming fundamentals");
+            break;
+        default:
+            printf("Invalid Chon!");
+    }
+   
+    return 0;
+}

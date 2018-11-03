@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+
+    int Chon;
+    printf("\t\tSO THICH CA NHAN\n");
+    printf("\t1. Doc sach\n");
+    printf("\t2. Nghe Nhac\n");
+    printf("\t3. The Thao\n");
+    printf("\t4. May Tinh\n");
+    printf("\t5. Thoat\n");
+    printf("\t- Moi Ban Chon: ");
+    scanf("%d",&Chon);
+
+    switch (Chon)
+    {
+    case 1:
+    
+        printf("\tBan da chon Doc Sach");
+        break;
+    
+    case 2:
+    
+        printf("\tBan da chon Nghe Nhac");
+        break;
+    
+    case 3:
+    {
+        printf("\tBan da chon Theo Thao");
+        break;
+    }
+    case 4:
+    
+        printf("\tBan da chon May Tinh");
+        break;
+    
+    default:
+    
+        printf("\tThoat");
+        break;
+    
+    }
+    return 0;
+}

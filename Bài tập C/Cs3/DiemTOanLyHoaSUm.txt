@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() 
+{  
+    float m;
+    float p;
+    float c;
+    float sum;
+    float avg;
+    printf("Input mark of Mathematics: ");
+    scanf("%f", &m);
+    printf("Input mark of Physics: ");
+    scanf("%f", &p);
+    printf("Input mark of Chemistry: ");
+    scanf("%f", &c);
+    sum = m + p + c;
+    avg = sum / 3;
+    printf("Sum of 3 subjects: %0.1f", sum);
+    printf("\nAverage of 3 subjects: %0.1f", avg);
+    printf("\n");
+    return 0;
+}

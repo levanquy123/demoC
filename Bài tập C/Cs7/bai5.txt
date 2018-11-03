@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main()
+{
+    char array[11];
+
+    
+    for(int i = 0; i < 10; i++)
+    {
+        printf("Input array[%d]: ", i);
+        array[i] = getchar();
+        getchar();
+    }
+    
+    
+    for(int i = 0; i < 10; i++)
+    {
+        printf("%c\t", toupper(array[i]));
+    }
+    printf("\n");
+
+    printf("Input string: ");
+    scanf("%s", array);
+
+    int j = 0;
+    while(j < 10) {
+        printf("%c", toupper(array[j]));
+        j++;
+    }
+    printf("\n");
+
+    return 0;
+}

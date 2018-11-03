@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main()
+{
+    int array[5][9];                                    //khai báo m?ng 5 hàng 9 c?t
+    int row = 0;                                        //hàng
+    int col = 4;                                        // c?t
+
+    for(int i = 0; i < 5; i++)                          // t?o 5 hàng 9 c?t b?ng kho?ng tr?ng
+    {                                                   //b?ng vòng l?p for               
+        for(int j = 0; j < 9; j++)
+        {
+            array[i][j] = 0;                            // gán m?ng i và j = 0
+        }
+    }
+
+    array[row][col] = 1;                                //t?o hình tam giác ngoài b?ng s? 1
+    int colLeft = 0;
+    int colRight = 0;
+    for(int i = 1; i < 5; i++)
+    {
+        colLeft = col - i;
+        colRight = col + i;
+        array[i][colLeft] = 1;
+        array[i][colRight] = 1;
+        if(i > 1){                                        
+    
+            for(int j = colLeft+2; j < colRight; j+=2)         
+            {
+                array[i][j] = array[i-1][j-1] + array[i-1][j+1];  // c?t trái j-2 , c?t ph?i + 2
+            }
+        }
+    }
+    
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < 9; j++)
+        {
+            if(array[i][j] == 0)
+            {
+                printf(" ");
+                continue;       // in kho?ng tr?ng
+            }
+            printf("%d", array[i][j]);
+        }
+        printf("\n");
+    }
+    
+
+    return 0;
+}

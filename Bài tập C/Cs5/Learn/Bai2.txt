@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+    int A;
+    int B;
+    int C;
+    int MAX;
+    printf("Nhap A: ");
+    scanf("%d", &A);
+    printf("Nhap B: ");
+    scanf("%d", &B);
+    printf("Nhap C: ");
+    scanf("%d", &C);
+
+    if ((A > B) && (A > C))
+    {
+        MAX = A;
+        printf("Max = A",MAX);
+    }
+    else if ((B > A) && (B > C))
+    {
+        MAX = B;
+        printf(" MAX = B",MAX);
+    }
+    else if ((C > A) && (C > B))
+    {
+        MAX = C;
+        printf("MAX = C",MAX);
+    }
+    else
+    {
+        printf("Stop");
+    }
+    printf("\n");
+    return 0;
+}

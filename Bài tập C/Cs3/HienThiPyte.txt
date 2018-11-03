@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() 
+{
+    int a;
+    char c;
+    float f;
+    double d;
+    a = 15;
+    c = 'A';
+    f = 1.6;
+    d = 1989898.98;
+    printf("Size of int type: %lu", sizeof(a));
+    printf("\nSize of char type: %lu", sizeof(c));
+    printf("\nSize of float type: %lu", sizeof(f));
+    printf("\nSize of double type: %lu", sizeof(d));
+    printf("\n");
+    return 0;
+}

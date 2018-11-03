@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main (){
+	 int a;
+	 int b;
+ 
+ 	printf("Nhap a: ");
+ 	scanf("%d",&a);
+ 	printf("Nhap b: ");
+ 	scanf("%d",&b);
+
+ 	double c = (double)a/b;	
+ 	printf("a / b= %.7lf",c);
+	return 0;
+}
+	

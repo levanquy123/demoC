@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+    int x;
+    int y;
+    int exp;
+    
+    printf("Nhap x: ");
+    scanf("%d",&x);
+    printf("Nhap y: ");
+    scanf("%d",&y);
+    
+  
+   exp = (x*x*x)+ (3*x*x)+(3*x*y*y)+(y*y*y);
+   printf("Ket qua exp: %d",exp);
+}

@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int array[10];
+    int num = 0;
+    short exists = 0;
+    int firstIndex = -1;
+    int numCount = 0;
+
+    srand(time(NULL));   
+    for(int i = 0; i < 10; i++)
+    {
+        array[i] = rand() % 100;
+    }
+
+    printf("Input number: ");
+    scanf("%d", &num);
+    
+    for(int i = 0; i < 10; i++)
+    {
+        if(num == array[i])
+        {
+            numCount++;
+            if(exists == 0)
+            {
+                exists = 1;
+                firstIndex = i;
+            }
+        }
+        printf("array[%d]: %d \t", i, array[i]);
+    }
+    printf("\n");
+    if(exists == 1)
+    {
+        printf("Number exist in array\n");
+        printf("First index: %d\n", firstIndex);
+        printf("Number count: %d\n", numCount);
+    }
+    else
+    {
+        printf("Number not exist in array\n");
+    }
+    
+    return 0;
+}

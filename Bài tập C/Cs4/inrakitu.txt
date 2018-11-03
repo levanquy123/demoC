@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+    int a = 10;
+    int b = 5 ;
+    int hoac = a | b;
+    int va = a && b;
+    int nhan = a ^ b;
+    
+
+    printf(" a = %d\n b = %d\n",a,b);
+    printf(" a | b: %d\n",hoac);
+    printf(" a & b: %d\n",va);
+    printf(" a ^ b: %d\n",nhan);
+   
+    return 0;
+}
+	

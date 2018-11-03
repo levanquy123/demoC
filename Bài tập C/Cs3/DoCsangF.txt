@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() 
+{  
+    float c;
+    float f;
+    printf("Nhap C: ");
+    scanf("%d", &c);
+    f = 32 + (c * 9) / 5;
+    printf("\Do F = %0.1f", f);
+    
+    return 0;
+}

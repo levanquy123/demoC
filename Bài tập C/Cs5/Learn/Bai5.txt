@@ -1,0 +1,77 @@
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    char Ki_tu;
+
+    printf("\t-Nhap Lua Chon cua Ban: ");
+    scanf("%c", &Ki_tu);
+
+    if (Ki_tu < 'a' && Ki_tu > 'z' || Ki_tu < 'A' && Ki_tu > 'Z') // check dieu kien Ki tu nam trong khoang tu a -> z  & A -> Z
+        printf("Ki tu khong lam trong tu a -> z & A -> Z\n");     // nam ngoai thi in ra Ki tu khong lam trong tu a -> z & A -> Z
+    else
+    {
+        switch (Ki_tu)
+    // IN THUONG
+        {
+        case 'u':
+        {
+            printf(" \t-u La nguyen am\n");
+            break;
+        }
+        case 'e':
+        {
+            printf(" \t-e La nguyen am\n");
+            break;
+        }
+        case 'o':
+        {
+            printf(" \t-o La nguyen am\n");
+            break;
+        }
+        case 'a':
+        {
+            printf(" \t-a La nguyen am\n");
+            break;
+        }
+        case 'i':
+        {
+            printf(" \t-i La nguyen am\n");
+            break;
+        }
+    // IN HOA
+        case 'U':
+        {
+            printf(" \t-U La nguyen am\n");
+            break;
+        }
+        case 'E':
+        {
+            printf(" \t-E La nguyen am\n");
+            break;
+        }
+        case 'O':
+        {
+            printf(" \t-O La nguyen am\n");
+            break;
+        }
+        case 'A':
+        {
+            printf(" \t-A La nguyen am\n");
+            break;
+        }
+        case 'I':
+        {
+            printf(" \t-I La nguyen am\n");
+            break;
+        }
+        default:
+        {
+            printf("\t-Khong thuoc bang chu cai");
+        }
+        break;
+        }
+
+        return 0;
+    }
+}

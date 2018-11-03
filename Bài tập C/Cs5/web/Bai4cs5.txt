@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main() 
+{  
+    int a;
+    int b;
+    int c;
+    printf("Input a: ");
+    scanf("%d", &a);
+    printf("Input b: ");
+    scanf("%d", &b);
+    printf("Input c: ");
+    scanf("%d", &c);
+    if ((a + b > c) || (a + c > b) || (b + c > a)) 
+    {
+        printf("Tam Giac Thuong");
+    }
+    else if ((a == b) || (b == c) || (c == a)) 
+    {
+        printf("Tam Giac Can");
+    } 
+    else if ((a == b) && (b == c) && (c == a)) 
+    {
+        printf("Tam Giac Deu");
+    } 
+    else if ((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == b * b + a * a)) 
+    {
+        printf("Tam Giac Vuong Goc Phai");
+    } 
+    else
+    {
+        printf("Day khong phai la Tam Giac");
+    }
+   
+    return 0;
+}

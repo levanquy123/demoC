@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+    double km;
+    double mi;
+ printf("Nhap Gia tri Dam: ");
+ scanf("%lf",&mi);
+ 
+ km = (mi/0.621371192);
+ printf("Ket qua sau khi chuyen doi la: %lf",km);
+    return 0;
+}

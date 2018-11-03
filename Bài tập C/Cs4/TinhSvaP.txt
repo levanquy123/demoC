@@ -1,0 +1,39 @@
+#include <stdio.h>
+#define PI 3.14
+
+int main() 
+{  
+    int a, b, ar, pr;
+    int c1, c2, c3, h, at, pt;
+    float r, ac, pc;
+    printf("Input width of Rectange: ");
+    scanf("%d", &a);
+    printf("Input height of Rectange: ");
+    scanf("%d", &b);
+    pr = (a + b) * 2;
+    ar = a * b;
+    printf("Perimeter of Rectange: %d", pr);
+    printf("\nArea of Rectange: %d", ar);
+    printf("\n---------------------------");
+    printf("\nInput c1 of Triangle: ");
+    scanf("%d", &c1);
+    printf("Input c2 of Triangle: ");
+    scanf("%d", &c2);
+    printf("Input c3 of Triangle: ");
+    scanf("%d", &c3);
+    printf("Input h of Triangle: ");
+    scanf("%d", &h);
+    pt = c1 + c2 + c3;
+    at = (c3 * h) / 2;
+    printf("Perimeter of Triangle: %d", pt);
+    printf("\nArea of Triangle: %d", at);
+    printf("\n---------------------------");
+    printf("\nInput r of Circle: ");
+    scanf("%f", &r);
+    pc = PI * r * r;
+    ac = PI * 2 * r; 
+    printf("Perimeter of Circle: %0.1f", pc);
+    printf("\nArea of Circle: %01.1f", ac);
+    printf("\n");
+    return 0;
+}

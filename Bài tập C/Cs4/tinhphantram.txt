@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+ int luongcoban = 1200;
+    double DA = (luongcoban * 12)/100;
+    int TA = 10;
+    int HRA = 150;
+    int khoankhac = 50;
+    double thuePF =(luongcoban*14)/100;
+    double thueIT = (luongcoban * 15)/100;
+	double luongthuclinh;
+
+    luongthuclinh =(double) (luongcoban + DA + HRA + TA +khoankhac - (thuePF + thueIT));
+    printf("luong thuc linh la: %.1lf", luongthuclinh);
+
+    return 0;
+}

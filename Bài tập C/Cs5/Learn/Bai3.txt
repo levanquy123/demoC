@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int a;
+    int b;
+    int c;
+    double x, x1, x2;
+    double d;
+    printf("Nhap a: ");
+    scanf("%d", &a);
+    printf("Nhap b: ");
+    scanf("%d", &b);
+    printf("Nhap c: ");
+    scanf("%d", &c);
+    if (a == 0)
+    {
+        printf("\nKhong phai la phuong trinh bac 2");
+        return 0;
+    }
+    else
+    {
+        d = (double)b * b - (4 * a * c);
+        if (d < 0)
+        {
+            printf("Phuong trinh vo nghiem");
+        }
+        else
+        {
+            if (d > 0)
+            {
+                x1 = -b + sqrt(d) / 2 * a;
+                x2 = -b - sqrt(d) / 2 * a;
+                printf("Phuong trinh co 2 nghiem phan biet: x1 = %0.2lf, x2 = %0.2lf", x1, x2);
+            }
+            else
+            {
+                x = -b / 2 * a;
+                printf("Phuong trinh co nghiem kep x = %0.2lf", x);
+            }
+        }
+    }
+    printf("\n");
+    return 0;
+}
