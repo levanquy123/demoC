@@ -16,7 +16,8 @@ int main(int argc, char const *argv[])
 {
     MainMenu();
 
-    return 0;
+
+    return 10000;
 }
 
 void MainMenu()
