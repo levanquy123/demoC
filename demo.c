@@ -25,6 +25,12 @@ void MainMenu()
     Input();
     Output();
 }
+
+
+int sum(int a, int b){
+
+    return a + b;
+}
 int n = 0;
 void Input()
 {
