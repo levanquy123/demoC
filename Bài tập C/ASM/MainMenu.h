@@ -11,9 +11,9 @@ struct DoiBong
 
 int n = 0;
 
-void XemDanhSachDoiBong();
-void ThemDoiBong();
-void capNhatThongTin();
+// void XemDanhSachDoiBong();
+// void ThemDoiBong();
+// void capNhatThongTin();
 void QuanLiDanhSachDoiBong();
 
 void MainMenu()

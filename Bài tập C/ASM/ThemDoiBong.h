@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include<QuanLiDanhSachDoiBong.h>
+
 struct DoiBong
 {
     char Madoi[10];
@@ -18,10 +20,9 @@ void ThemDoiBong()
 
     Db = (struct DoiBong *)malloc(n * sizeof(struct DoiBong));
     char select;
-
-    while (1)
-    {
-        Db = realloc(Db, (n + 1) * sizeof(struct DoiBong));
+    
+        // create a new team
+  
 
         printf("                                   \n");
         printf("==== Thêm mới một đội bóng ====\n");
@@ -45,16 +46,23 @@ void ThemDoiBong()
         fflush(stdin);
         scanf("%c", &select);
 
-        if (select == 'n')
-        {
+        if (select == 'n' || select == 'n') {
             p = fopen("Data.dat", "wb");
 
-            fwrite(Db, sizeof(struct DoiBong ), 1, p);
-            fclose(p);
-            QuanLiDanhSachDoiBong();
-            getchar();
+            // clear screen
 
-            break;
+            fwrite(Db, sizeof(struct DoiBong ), 1, p);
+
+            fclose(p);
+            
+            QuanLiDanhSachDoiBong();
+            
+            getchar();
+        }else if( select == 'y' ||  select == 'Y'){
+            //clear screen
+
+            ThemDoiBong();
+            getchar();
         }
-    }
+    
 }

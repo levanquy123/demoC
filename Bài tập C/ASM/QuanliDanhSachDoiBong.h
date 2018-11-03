@@ -5,7 +5,7 @@
 void XemDanhSachDoiBong();
 void ThemDoiBong();
 void capNhatThongTin();
-void QuanLiDanhSachDoiBong();
+
 void MainMenu();
 
 void QuanLiDanhSachDoiBong()
